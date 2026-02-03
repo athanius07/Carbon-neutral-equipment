@@ -1,0 +1,27 @@
+/* Blue + light grey theme */
+:root{--blue:#0e5aa7;--light:#f5f7fa;--text:#0f172a;--muted:#6b7280;--border:#e5e7eb;--green:#22c55e;--cyan:#06b6d4;--amber:#f59e0b;--purple:#a855f7}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--light);color:var(--text)}
+header{background:var(--blue);color:white;padding:24px 16px}header h1{margin:0 0 4px;font-size:28px}
+main{max-width:1200px;margin:16px auto;padding:0 16px}
+.controls{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.filters{display:flex;gap:8px;align-items:center}
+.filters label{font-weight:600;color:var(--muted)}
+#search{padding:8px 10px;border:1px solid var(--border);border-radius:8px;min-width:260px}
+.chip{border:1px solid var(--border);background:white;border-radius:9999px;padding:6px 10px;cursor:pointer}
+.chip.active{border-color:var(--blue);color:var(--blue);box-shadow:0 0 0 2px rgba(14,90,167,.1)}
+.power-battery{background:rgba(34,197,94,.12)}
+.power-hydrogen{background:rgba(6,182,212,.12)}
+.power-ethanol{background:rgba(168,85,247,.12)}
+.power-hybrid{background:rgba(245,158,11,.12)}
+.table-wrap{background:white;border:1px solid var(--border);border-radius:12px;overflow:auto}
+#equip{border-collapse:collapse;width:100%}
+#equip th,#equip td{padding:10px 8px;border-bottom:1px solid var(--border);vertical-align:top}
+#equip thead th{position:sticky;top:0;background:#fff}
+#equip tbody tr:hover{background:#fafafa}
+.badge{padding:2px 8px;border-radius:9999px;font-size:12px;display:inline-block}
+.badge.battery{background:rgba(34,197,94,.15);color:#14532d}
+.badge.h2{background:rgba(6,182,212,.15);color:#0c4a6e}
+.badge.hybrid{background:rgba(245,158,11,.15);color:#78350f}
+.badge.ethanol{background:rgba(168,85,247,.15);color:#5b21b6}
+footer{max-width:1200px;margin:12px auto;padding:0 16px;color:var(--muted)}
+.legend{padding:2px 8px;border-radius:9999px;border:1px solid var(--border);margin-left:6px}

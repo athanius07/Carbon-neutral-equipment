@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Carbon Reduction Equipment Schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "model",
+      "oem",
+      "country",
+      "machine_type",
+      "power_use",
+      "status",
+      "source_link"
+    ],
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "model": {
+        "type": "string"
+      },
+      "oem": {
+        "type": "string"
+      },
+      "country": {
+        "type": "string"
+      },
+      "machine_type": {
+        "type": "string",
+        "enum": [
+          "Dump truck",
+          "Bulldozer",
+          "Grader",
+          "Wheel loader",
+          "Excavator"
+        ]
+      },
+      "power_use": {
+        "type": "string"
+      },
+      "class_tonnage": {
+        "type": "string"
+      },
+      "engine_power_kw": {
+        "type": "string"
+      },
+      "blade_size_mm": {
+        "type": "string"
+      },
+      "bucket_size_m3": {
+        "type": "string"
+      },
+      "year_of_release": {
+        "type": "string"
+      },
+      "status": {
+        "type": "string"
+      },
+      "source_link": {
+        "type": "string"
+      },
+      "source_date": {
+        "type": "string"
+      },
+      "notes": {
+        "type": "string"
+      }
+    }
+  }
+}

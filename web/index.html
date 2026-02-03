@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Low‑Carbon Heavy Equipment Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Low‑Carbon Heavy Equipment Tracker</h1>
+    <p>Global snapshot of carbon‑reduction machines (auto‑updatable)</p>
+  </header>
+  <main>
+    <section class="controls">
+      <div class="filters">
+        <label>Type:</label>
+        <button class="chip" data-type="All">All</button>
+        <button class="chip" data-type="Excavator">Excavators</button>
+        <button class="chip" data-type="Wheel loader">Wheel loaders</button>
+        <button class="chip" data-type="Bulldozer">Bulldozers</button>
+        <button class="chip" data-type="Grader">Graders</button>
+        <button class="chip" data-type="Dump truck">Dump trucks</button>
+      </div>
+      <div class="filters">
+        <label>Power:</label>
+        <button class="chip power-battery" data-power="Battery electric">Battery</button>
+        <button class="chip power-hydrogen" data-power="Hydrogen fuel cell">Hydrogen (FC)</button>
+        <button class="chip power-hydrogen" data-power="Hydrogen (combustion)">Hydrogen (ICE)</button>
+        <button class="chip power-hybrid" data-power="Diesel-electric hybrid">Diesel hybrid</button>
+      </div>
+      <input id="search" placeholder="Search model, OEM, country…" />
+    </section>
+
+    <section class="table-wrap">
+      <table id="equip">
+        <thead>
+          <tr>
+            <th>Power</th>
+            <th>OEM</th>
+            <th>Model</th>
+            <th>Country</th>
+            <th>Type</th>
+            <th>Class</th>
+            <th>Engine / Motor power (kW)</th>
+            <th>Blade (grader)</th>
+            <th>Bucket (m³)</th>
+            <th>Year</th>
+            <th>Status</th>
+            <th>Source</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <small>UI theme: blue / light‑grey. Power chips: <span class="legend power-battery">Battery</span> <span class="legend power-hydrogen">Hydrogen</span> <span class="legend power-ethanol">Ethanol/Methanol</span> <span class="legend power-hybrid">Diesel hybrid</span></small>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
